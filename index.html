@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <head>
   <title>Your Title</title>
+  setTitle(title) {
+  document.title = yourTitle;
+  document.querySelector('[property="og:title"]').setAttribute('content', title);
+  document.querySelector('[name="twitter:title"]').setAttribute('content', title);
+}
+setDescription(description) {
+  document.querySelector('[name="description"]').setAttribute('content', description);
+  document.querySelector('[property="og:description"]').setAttribute('content', description);
+  document.querySelector('[name="twitter:description"]').setAttribute('content', description);
+}
+setImage(image) {
+  document.querySelector('[property="og:image"]').setAttribute('content', image);
+  document.querySelector('[name="twitter:image"]').setAttribute('content', image);
+}
   <meta property="og:title" content="Your Title" />
   <meta name="twitter:title" content="Your Title" />
 
