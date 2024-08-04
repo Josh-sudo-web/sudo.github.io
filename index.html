@@ -3,24 +3,88 @@
   <head>
    
   <body>
-    <h1>hi12378</h1>
-    
-    
-    
-    
-    <h2>HTML Forms</h2>
-
-    <form action="/index2.html">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-    </form> 
-
-    <p>If you click the "Submit" button, the form-data will be sent to a page called "/index2.html".</p>
-    
-    
+  <section class="section">
+    <div class="container">
+      <div class="notification is-info is-light">
+        <button class="delete"></button>
+        Visit my Discord Sever <a href="https://web.archive.org/web/20230627034916/https://rauf.wtf/discord">https://rauf.wtf/discord</a>
+      </div>
+      <div class="notification is-success is-light">
+        <button class="delete"></button>
+        Help support the Embed Generator by donating to me via <a href="https://web.archive.org/web/20230627034916/https://ko-fi.com/itsrauf">Ko-Fi</a>
+      </div>
+      <h1 class="title">Rauf's Embed Generator</h1>
+      <div class="notification is-warning">
+        This tool is <strong>Use At Your Own Risk</strong> and I am not responsible for what happens by you using it.
+      </div>
+      <div class="field">
+        <label class="label" for="domain">Domain</label>
+        <div class="field">
+          <div class="control">
+            <div class="select is-link is-rounded is-fullwidth">
+              <select id="domain">
+                <option>https://embed.rauf.workers.dev/</option>
+                <option>https://embed.rauf.wtf/</option>
+                <option>https://rauf.wtf/embed/</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="author">Author Text</label>
+          <div class="control">
+            <input class="input is-rounded" type="text" placeholder="Author Text..." id="author">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="title">Title Text</label>
+          <div class="control">
+            <input class="input is-rounded" type="text" placeholder="Title Text..." id="title">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="description">Description</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Description..." id="description"></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="color">Sidebar Color</label>
+          <div class="control">
+            <input class="input is-rounded is-large" type="color" id="color">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="image">Image URL</label>
+          <div class="control">
+            <input class="input is-rounded" type="text" placeholder="Image URL..." id="image">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="redirect">Redirect URL</label>
+          <div class="control">
+            <input class="input is-rounded" type="text" placeholder="Redirect URL..." id="redirect">
+          </div>
+        </div>
+        <div class="field">
+          <p class="control">
+            <button class="button is-info is-rounded is-medium is-fullwidth" id="generate">
+              Generate
+            </button>
+          </p>
+        </div>
+        <div class="field" id="finalURL" hidden="">
+          <article class="message is-info">
+            <div class="message-header">
+              <p>Generated URL</p>
+            </div>
+            <div class="message-body" id="finalURLText">
+              Placeholder Text
+            </div>
+          </article>
+        </div>
+      </div>
+  </div></section>
   </body>
      <title>Your Title</title>
 
